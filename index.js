@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000
 const host = 'localhost';
 const levenshtein = require('js-levenshtein') ;   
 const cles = ["gibbs4567"
