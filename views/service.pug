@@ -1,0 +1,31 @@
+doctype=html
+html
+	head
+		style
+			include style.css
+		
+		title Service ADN
+	body
+		ul
+			li 
+				a(href="/") Home
+			li 
+				a(href="/service") ADN
+
+
+		form(onsubmit="window.location = '/' + user.value + '/distance/' + Adn_A.value + '/' + Adn_B.value; return false;")
+			label(for='user') Clé:
+			br
+			input#fname(type='password' name='user' value='')
+			br
+			label(for='adn_A') ADN A:
+			br
+			input#lname(type='text' name='Adn_A' value='')
+			br
+			label(for='adn_B') ADN B:
+			br
+			input#lname(type='text' name='Adn_B' value='')
+			br
+			br
+			input(type='submit' href='/' value='Envoyer')
+
