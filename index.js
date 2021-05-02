@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
-const port = process.env.PORT || 5000
-const host = 'localhost';
+const host = '0.0.0.0';
+const port = process.env.PORT || 5000;
 const levenshtein = require('js-levenshtein') ;   
 const cles = ["gibbs4567"
 			 ,"gibbs4659"
@@ -125,6 +125,7 @@ app.get('*', (req, res, next) => {
 	next();
 });
 
+//on demarre le serveur
 app.listen(port, host, () => {
 	console.log(`Server started at ${host} port ${port}`);
 });
